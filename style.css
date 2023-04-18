@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+header {
+    font-size: 2rem;
+}
+button {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border: none;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.result,.select-move {
+    height: 30px;
+    margin-top: 10px;
+}
+.select-move {
+
+}
+#rock,.rock {
+    background-color: red;
+}
+
+#paper,.paper {
+    background-color: aqua;
+}
+
+#scissors,.scissors {
+    background-color: green;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+button:active {
+    opacity: 0.4;
+}
+.img-moves {
+    padding-top: 10px;
+    width: 200px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    border: none;
+    font-size: 1.5rem;
+}
+.you-move,.computer-move {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
