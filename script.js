@@ -24,7 +24,7 @@ function computerPlay(userSelected){
     const computerMove = Math.floor(Math.random()*computerChoices.length)
     const computerSelected = computerChoices[computerMove]
     computerMoveFun(computerSelected,buttonCode[computerMove])
-    selectedMoves.textContent = `You selected : ${userSelected} : computer selected : ${computerSelected}`
+    selectedMoves.textContent = `${userSelected} -------------------- ${computerSelected}`
     if(userSelected === computerSelected) {
         return "Tie !"
     }  else if((userSelected === 'rock' && computerSelected === 'scissors') ||
@@ -49,7 +49,6 @@ function yourMove(x,y){
 }
 
 function computerMoveFun(x,y){
-    console.log(x,y)
     computerEl.textContent = ''
     const computerBtn = document.createElement("button")
     computerBtn.classList.add(`${x}`)

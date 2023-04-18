@@ -24,12 +24,10 @@ button {
     cursor: pointer;
 }
 .result,.select-move {
-    height: 30px;
+    height: 20px;
     margin-top: 10px;
 }
-.select-move {
 
-}
 #rock,.rock {
     background-color: red;
 }
@@ -65,4 +63,14 @@ input {
     justify-content: center;
     text-align: center;
 
+}
+
+#user-score,#computer-score {
+background-color: red;
+padding: 4px;
+border-radius: 50%;
+}
+
+#computer-score {
+    background-color: green;
 }
