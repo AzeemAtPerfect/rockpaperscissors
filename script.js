@@ -5,10 +5,12 @@ const computerScoreEl = document.getElementById("computer-score")
 const selectedMoves = document.querySelector(".select-move")
 const youEl = document.querySelector(".you")
 const computerEl = document.querySelector(".computer")
-
+const reloadBtn = document.querySelector(".reload-btn")
 
 let userScore = 0
 let computerScore = 0
+
+reloadBtn.addEventListener("click",restartGame)
 
 buttons.forEach(button => {
     button.addEventListener("click",() => {
@@ -54,4 +56,7 @@ function computerMoveFun(x,y){
     computerBtn.classList.add(`${x}`)
     computerBtn.innerHTML = `${y}`
     computerEl.appendChild(computerBtn)
+}
+function restartGame() {
+    location.reload()
 }

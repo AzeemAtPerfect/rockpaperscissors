@@ -74,3 +74,9 @@ border-radius: 50%;
 #computer-score {
     background-color: green;
 }
+.reload-btn {
+    font-size: 1rem;
+    width: 100px;
+    height: 25px;
+    background-color: aqua;
+}
